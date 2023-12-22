@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "public/**/*", "use": "@vercel/static" },
+      { "src": "src/**/*", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/public/$1" },
+      { "src": "/(images|fonts)/(.*)", "dest": "/src/$1/$2" }
+    ]
+  }
+  
