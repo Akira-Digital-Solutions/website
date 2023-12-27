@@ -1,12 +1,69 @@
 import Image from "next/image";
-import styles from "./page.module.css";
-import "react-bootstrap";
-//import "~node_modules/bootstrap/scss/bootstrap";
+import styles from "./css/style.module.css";
+import LogoName from "../../public/imgs/logo-name.png";
+import "./layout";
 
 export default function Home() {
     return (
-        <main className={styles.main}>
-            <div></div>
-        </main>
+        <html lang="en">
+            <head>
+                <title>Akira Digital Solutions - Home</title>
+            </head>
+            <body className={`${styles.main}`} style={{ backgroundColor: "black" }}>
+                <header className={`${styles.container01} container-fluid pt-3`}>
+                    <div>
+                        <Image
+                            src={LogoName}
+                            alt="logo-name.png"
+                            style={{ width: "100px", height: "auto" }}
+                        />
+                    </div>
+
+                    <div className={`${styles.containerFlex}`}>
+                        <a
+                            className={`px-1 ${styles.textColor}`}
+                            style={{
+                                textDecoration: "none",
+                            }}
+                        >
+                            TEAM
+                        </a>
+                        <a
+                            className={`px-1 ${styles.textColor2}`}
+                            style={{
+                                textDecoration: "none",
+                            }}
+                        >
+                            SERVICES
+                        </a>
+                        <a
+                            className={`px-1 ${styles.textColor}`}
+                            style={{
+                                textDecoration: "none",
+                            }}
+                        >
+                            ABOUT
+                        </a>
+                        <a
+                            className={`px-1 ${styles.textColor}`}
+                            style={{
+                                textDecoration: "none",
+                            }}
+                        >
+                            CONTACT
+                        </a>
+                        <a
+                            className={`px-1 ${styles.textColor}`}
+                            style={{
+                                textDecoration: "none",
+                            }}
+                        >
+                            EN | PT-BR
+                        </a>
+                    </div>
+                </header>
+                <footer></footer>
+            </body>
+        </html>
     );
 }
