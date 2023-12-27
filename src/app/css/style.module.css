@@ -22,6 +22,10 @@
   padding: 0;
 }
 
+.video {
+  width: fit-content;
+}
+
 .textColor {
   color: #ffffff;
 }
