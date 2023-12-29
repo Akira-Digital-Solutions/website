@@ -69,6 +69,7 @@ export default function Home() {
                     </header>
                     <div>
                         <div className={`${styles.videoContainer} container-fluid`}>
+                            test
                             <video
                                 src={require("/public/video/videoBgV2.mp4")}
                                 className={styles.video}
