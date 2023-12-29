@@ -21,6 +21,13 @@
     padding: 0;
 }
 
+.videoContainer {
+    justify-content: center;
+    align-items: center;
+}
 .video {
-    width: fit-content;
+    z-index: -1;
+    padding-left: 15%;
+    width: 80%;
+    object-fit: cover;
 }

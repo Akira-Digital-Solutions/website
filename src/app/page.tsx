@@ -10,9 +10,12 @@ export default function Home() {
             <head>
                 <title>Akira Digital Solutions - Home</title>
             </head>
-            <body className={`${styles.main}`} style={{ backgroundColor: "black" }}>
+            <body
+                className={`${styles.main}`}
+                style={{ background: "linear-gradient(to top left, #0d0903, #000000)" }}
+            >
                 <div>
-                    <header className={`${styles.container01} container-fluid pt-3`}>
+                    <header className={`${styles.container01} container-fluid p-3 px-5`}>
                         <div>
                             <Image
                                 src={LogoName}
@@ -21,7 +24,7 @@ export default function Home() {
                             />
                         </div>
 
-                        <div className={`${styles.containerFlex}`}>
+                        <div className={`${styles.containerFlex} py-3`}>
                             <a
                                 className={`px-1 ${styles.textColor}`}
                                 style={{
@@ -64,12 +67,16 @@ export default function Home() {
                             </a>
                         </div>
                     </header>
-                    <video
-                        src={require("/public/video/akira-intro.mp4")}
-                        className={styles.video}
-                        muted
-                        autoPlay
-                    />
+                    <div>
+                        <div className={`${styles.videoContainer} container-fluid`}>
+                            <video
+                                src={require("/public/video/videoBgV2.mp4")}
+                                className={styles.video}
+                                muted
+                                autoPlay
+                            />
+                        </div>
+                    </div>
                 </div>
                 <footer></footer>
             </body>
