@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./css/style.module.css";
 import LogoName from "../../public/imgs/logo-name.png";
+import { Typed1, Typed2 } from "../../scripts/textChange";
 //import VideoBg from "../../public/video/akira-intro.mp4";
 import "./layout";
 
@@ -12,7 +13,10 @@ export default function Home() {
             </head>
             <body
                 className={`${styles.main}`}
-                style={{ background: "linear-gradient(to top left, #0d0903, #000000)" }}
+                style={{
+                    background: "linear-gradient(to top left, #0d0903, #000000)",
+                    color: "white",
+                }}
             >
                 <div>
                     <header className={`${styles.container01} container-fluid p-3 px-5`}>
@@ -69,7 +73,7 @@ export default function Home() {
                     </header>
                     <div>
                         <div className={`${styles.videoContainer} container-fluid`}>
-                            test
+                            <span ref={el1} />
                             <video
                                 src={require("/public/video/videoBgV2.mp4")}
                                 className={styles.video}
