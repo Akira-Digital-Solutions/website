@@ -1,8 +1,7 @@
 import Image from "next/image";
 import styles from "./css/style.module.css";
 import LogoName from "../../public/imgs/logo-name.png";
-import { Typed1, Typed2 } from "../../scripts/textChange";
-//import VideoBg from "../../public/video/akira-intro.mp4";
+import { TypyingEffect1, TypyingEffect2 } from "../../components/textChange";
 import "./layout";
 
 export default function Home() {
@@ -73,7 +72,9 @@ export default function Home() {
                     </header>
                     <div>
                         <div className={`${styles.videoContainer} container-fluid`}>
-                            <span ref={el1} />
+                            <div>
+                                <TypyingEffect1 />
+                            </div>
                             <video
                                 src={require("/public/video/videoBgV2.mp4")}
                                 className={styles.video}
