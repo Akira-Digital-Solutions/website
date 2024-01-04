@@ -21,6 +21,22 @@
     padding: 0;
 }
 
+.initialText {
+    font-weight: 500;
+    max-width: 100%;
+    position: absolute;
+    margin: -2% 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .initialTextFlex {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 .videoContainer {
     justify-content: center;
     align-items: center;
