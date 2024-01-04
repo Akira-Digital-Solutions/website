@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./css/style.module.css";
 import LogoName from "../../public/imgs/logo-name.png";
-//import VideoBg from "../../public/video/akira-intro.mp4";
+import { TypyingEffect1, TypyingEffect2, TypyingEffect3 } from "../../components/textChange";
 import "./layout";
 
 export default function Home() {
@@ -12,12 +12,16 @@ export default function Home() {
             </head>
             <body
                 className={`${styles.main}`}
-                style={{ background: "linear-gradient(to top left, #0d0903, #000000)" }}
+                style={{
+                    background: "linear-gradient(to top left, #0d0903, #000000)",
+                    color: "white",
+                }}
             >
                 <div>
                     <header className={`${styles.container01} container-fluid p-3 px-5`}>
                         <div>
                             <Image
+                                id="logo"
                                 src={LogoName}
                                 alt="logo-name.png"
                                 style={{ width: "100px", height: "auto" }}
@@ -69,7 +73,19 @@ export default function Home() {
                     </header>
                     <div>
                         <div className={`${styles.videoContainer} container-fluid`}>
-                            test
+                            <div className={styles.initialText}>
+                                <div className="d-flex flex-row">
+                                    <TypyingEffect1 />
+                                </div>
+                                <div className="d-flex flex-row">
+                                    <span style={{ fontSize: "25px" }}>BUILD YOUR ‎</span>
+                                    <TypyingEffect2 />
+                                </div>
+                                <div className="d-flex flex-row">
+                                    <span style={{}}>BRING YOUR ‎</span> <TypyingEffect3 /> BUSINESS
+                                    TO REALITY
+                                </div>
+                            </div>
                             <video
                                 src={require("/public/video/videoBgV2.mp4")}
                                 className={styles.video}
