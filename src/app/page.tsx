@@ -72,25 +72,28 @@ export default function Home() {
                         </div>
                     </header>
                     <div>
-                        <div className={`${styles.videoContainer} container-fluid`}>
-                            <div className={styles.initialText}>
-                                <div className="d-flex flex-row">
-                                    <TypyingEffect1 />
-                                </div>
-                                <div className="d-flex flex-row">
-                                    <span style={{ fontSize: "25px" }}>BUILD YOUR ‎</span>
-                                    <TypyingEffect2 />
-                                </div>
-                                <div className="d-flex flex-row">
-                                    <span style={{}}>BRING YOUR ‎</span> <TypyingEffect3 /> BUSINESS
-                                    TO REALITY
-                                </div>
+                        <div className={`${styles.initialText}`}>
+                            <div className={styles.initialTextFlex}>
+                                <TypyingEffect1 />
                             </div>
+                            <div className={styles.initialTextFlex}>
+                                BUILD YOUR ‎ <TypyingEffect2 />
+                            </div>
+                            <div className={styles.initialTextFlex}>
+                                BRING YOUR ‎ <TypyingEffect3 /> ‎ BUSINESS TO REALITY
+                            </div>
+                            <div></div>
+                        </div>
+                        <div className={`${styles.videoContainer} container-fluid`}>
                             <video
-                                src={require("/public/video/videoBgV2.mp4")}
+                                src={require("/public/video/brand-video-final.mp4")}
                                 className={styles.video}
                                 muted
+                                loop
                                 autoPlay
+                                style={{
+                                    background: "linear-gradient(to top,#fff0 0%);",
+                                }}
                             />
                         </div>
                     </div>
