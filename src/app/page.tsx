@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 import styles from "./css/style.module.css";
 import LogoName from "../../public/imgs/logo-name.png";
 import { TypyingEffect1, TypyingEffect2, TypyingEffect3 } from "../../components/textChange";
@@ -7,9 +8,10 @@ import "./layout";
 export default function Home() {
     return (
         <html lang="en">
-            <head>
+            <Head>
+                <link rel="shortcut icon" href="/favicon.ico" sizes="any" />
                 <title>Akira Digital Solutions - Home</title>
-            </head>
+            </Head>
             <body
                 className={`${styles.main}`}
                 style={{
