@@ -9,7 +9,12 @@ export default function Home() {
     return (
         <html lang="en">
             <Head>
-                <link rel="shortcut icon" href="/public/imgs/favicon.ico" sizes="any" />
+                <link
+                    rel="shortcut icon"
+                    type="image/ico"
+                    href="/public/imgs/favicon.ico"
+                    sizes="any"
+                />
                 <title>Akira Digital Solutions - Home</title>
             </Head>
             <body
