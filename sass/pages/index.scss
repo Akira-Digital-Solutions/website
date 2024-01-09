@@ -11,6 +11,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     text-decoration: none;
+    min-height: 100vh;
+}
+.container02 {
+    min-height: 100vh;
+}
+.headerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
 }
 
 .containerFlex {
@@ -47,5 +57,4 @@
     padding-left: 15%;
     width: 80%;
     object-fit: cover;
-    background: linear-gradient(to bottom, #fff0 0%);
 }

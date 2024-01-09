@@ -17,8 +17,8 @@ export default function Home() {
                     color: "white",
                 }}
             >
-                <div>
-                    <header className={`${styles.container01} container-fluid p-3 px-5`}>
+                <div className={styles.container01}>
+                    <header className={`${styles.headerContainer} container-fluid p-3 px-5`}>
                         <div>
                             <Image
                                 id="logo"
@@ -71,7 +71,7 @@ export default function Home() {
                             </a>
                         </div>
                     </header>
-                    <div>
+                    <div className={`${styles.container02} container-fluid`}>
                         <div className={`${styles.initialText}`}>
                             <div className={styles.initialTextFlex}>
                                 <TypyingEffect1 />
@@ -91,12 +91,22 @@ export default function Home() {
                                 muted
                                 loop
                                 autoPlay
-                                style={{
-                                    background: "linear-gradient(to top,#fff0 0%);",
-                                }}
                             />
                         </div>
                     </div>
+                </div>
+                <div className={`${styles.container02} container-fluid`}>
+                    <div style={{ color: "white" }}>
+                        <h2>YOUR HIRING PROBLEMS ARE OVER</h2>HERE YOU CAN FIND ALL SOLUTIONS IN
+                        JUST 1 PLACE
+                    </div>
+                    <a
+                        type="button"
+                        className="btn btn-warning"
+                        href="https://calendly.com/akira-digital-solutions/30min"
+                    >
+                        Book a Meeting
+                    </a>
                 </div>
                 <footer></footer>
             </body>
