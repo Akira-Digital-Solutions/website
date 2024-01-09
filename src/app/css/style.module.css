@@ -12,6 +12,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
   text-decoration: none;
+  min-height: 100vh;
+}
+
+.container02 {
+  min-height: 100vh;
+}
+
+.headerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-decoration: none;
 }
 
 .containerFlex {
@@ -23,18 +35,19 @@
 }
 
 .initialText {
+  font-family: striker;
   font-weight: 500;
   max-width: 100%;
-  position: absolute;
-  margin: -2% 38%;
+  text-align: center;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .initialText .initialTextFlex {
   display: flex;
-  flex-direction: row;
 }
 
 .videoContainer {

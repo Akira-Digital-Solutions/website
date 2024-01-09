@@ -17,8 +17,8 @@ export default function Home() {
                     color: "white",
                 }}
             >
-                <div>
-                    <header className={`${styles.container01} container-fluid p-3 px-5`}>
+                <div className={styles.container01}>
+                    <header className={`${styles.headerContainer} container-fluid p-3 px-5`}>
                         <div>
                             <Image
                                 id="logo"
@@ -71,29 +71,42 @@ export default function Home() {
                             </a>
                         </div>
                     </header>
-                    <div>
-                        <div className={`${styles.videoContainer} container-fluid`}>
-                            <div className={styles.initialText}>
-                                <div className="d-flex flex-row">
-                                    <TypyingEffect1 />
-                                </div>
-                                <div className="d-flex flex-row">
-                                    <span style={{ fontSize: "25px" }}>BUILD YOUR ‎</span>
-                                    <TypyingEffect2 />
-                                </div>
-                                <div className="d-flex flex-row">
-                                    <span style={{}}>BRING YOUR ‎</span> <TypyingEffect3 /> BUSINESS
-                                    TO REALITY
-                                </div>
+                    <div className={`${styles.container02} container-fluid`}>
+                        <div className={`${styles.initialText}`}>
+                            <div className={styles.initialTextFlex}>
+                                <TypyingEffect1 />
                             </div>
+                            <div className={styles.initialTextFlex}>
+                                BUILD YOUR ‎ <TypyingEffect2 />
+                            </div>
+                            <div className={styles.initialTextFlex}>
+                                BRING YOUR ‎ <TypyingEffect3 /> ‎ BUSINESS TO REALITY
+                            </div>
+                            <div></div>
+                        </div>
+                        <div className={`${styles.videoContainer} container-fluid`}>
                             <video
-                                src={require("/public/video/videoBgV2.mp4")}
+                                src={require("/public/video/brand-video-final.mp4")}
                                 className={styles.video}
                                 muted
+                                loop
                                 autoPlay
                             />
                         </div>
                     </div>
+                </div>
+                <div className={`${styles.container02} container-fluid`}>
+                    <div style={{ color: "white" }}>
+                        <h2>YOUR HIRING PROBLEMS ARE OVER</h2>HERE YOU CAN FIND ALL SOLUTIONS IN
+                        JUST 1 PLACE
+                    </div>
+                    <a
+                        type="button"
+                        className="btn btn-warning"
+                        href="https://calendly.com/akira-digital-solutions/30min"
+                    >
+                        Book a Meeting
+                    </a>
                 </div>
                 <footer></footer>
             </body>
