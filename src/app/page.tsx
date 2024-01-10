@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <html lang="en">
             <Head>
-                <link rel="shortcut icon" href="/favicon.ico" sizes="32x32" />
+                <link rel="shortcut icon" href="/public/imgs/favicon.ico" />
                 <link
                     rel="icon"
                     type="image/png"
