@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Head from "next/head";
 import styles from "./css/style.module.css";
-import LogoName from "../../public/imgs/logo-name.png";
+import LogoName from "./public/imgs/logo-name.png";
 import { TypyingEffect1, TypyingEffect2, TypyingEffect3 } from "../../components/textChange";
 import "./layout";
 
@@ -100,7 +100,7 @@ export default function Home() {
                         </div>
                         <div className={`${styles.videoContainer} container-fluid`}>
                             <video
-                                src={require("/public/video/brand-video-final.mp4")}
+                                src={require("/src/app/public/video/brand-video-final.mp4")}
                                 className={styles.video}
                                 muted
                                 loop
