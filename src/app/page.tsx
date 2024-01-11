@@ -5,7 +5,7 @@ import LogoName from "./public/imgs/logo-name.png";
 import { TypyingEffect1, TypyingEffect2, TypyingEffect3 } from "../../components/textChange";
 import "./layout";
 
-export default function Home() {
+export default function HomePage() {
     return (
         <html lang="en">
             <Head>
@@ -99,13 +99,11 @@ export default function Home() {
                             <div></div>
                         </div>
                         <div className={`${styles.videoContainer} container-fluid`}>
-                            <video
-                                src={require("/src/app/public/video/brand-video-final.mp4")}
-                                className={styles.video}
-                                muted
-                                loop
-                                autoPlay
-                            />
+                            <video className={styles.video} muted loop autoPlay>
+                                <source
+                                    src={require("/src/app/public/video/brand-video-final.mp4")}
+                                />
+                            </video>
                         </div>
                     </div>
                 </div>
