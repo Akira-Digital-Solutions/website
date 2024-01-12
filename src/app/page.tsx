@@ -9,7 +9,7 @@ export default function HomePage() {
     return (
         <html lang="en">
             <Head>
-                <link rel="shortcut icon" href="/public/imgs/favicon.ico" />
+                <link rel="shortcut icon" href="/favicon.ico" />
                 <link
                     rel="icon"
                     type="image/png"
