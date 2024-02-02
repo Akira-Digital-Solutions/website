@@ -4,6 +4,7 @@ import styles from "./css/style.module.css";
 import LogoName from "./public/imgs/logo-name.png";
 import { TypyingEffect1, TypyingEffect2, TypyingEffect3 } from "../../components/textChange";
 import "./layout";
+import Test from "./Test";
 
 export default function HomePage() {
     return (
@@ -31,6 +32,7 @@ export default function HomePage() {
                     color: "white",
                 }}
             >
+                <Test />
                 <div className={styles.container01}>
                     <header className={`${styles.headerContainer} container-fluid p-3 px-5`}>
                         <div>
@@ -98,13 +100,14 @@ export default function HomePage() {
                             </div>
                             <div></div>
                         </div>
-                        <div className={`${styles.videoContainer} container-fluid`}>
+                        {/* <div className={`${styles.videoContainer} container-fluid`}>
                             <video className={styles.video} muted loop autoPlay>
                                 <source
                                     src={require("/src/app/public/video/brand-video-final.mp4")}
+                                    type="video/mp4"
                                 />
                             </video>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className={`${styles.container02} container-fluid`}>
